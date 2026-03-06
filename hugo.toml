@@ -10,3 +10,8 @@ author = "slowsteadyman"
 # 2. WARN 해결: 마크다운 파일 내 HTML 태그 사용 허용
 [markup.goldmark.renderer]
 unsafe = true
+
+[[menu.main]]
+    name = "Categories"
+    url = "categories/"
+    weight = 10
