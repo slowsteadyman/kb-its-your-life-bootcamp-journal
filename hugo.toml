@@ -1,0 +1,12 @@
+baseURL = 'https://github.com/slowsteadyman/kb-its-your-life-bootcamp-journal/'
+languageCode = 'ko-kr'
+title = "kb it's your life bootcamp journal"
+theme = 'PaperMod'
+
+# 1. ERROR 해결: 작성자 이름 추가 (원하는 닉네임으로 수정 가능)
+[params]
+author = "slowsteadyman"
+
+# 2. WARN 해결: 마크다운 파일 내 HTML 태그 사용 허용
+[markup.goldmark.renderer]
+unsafe = true

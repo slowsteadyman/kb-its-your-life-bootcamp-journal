@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/slowsteadyman/kb-its-your-life-bootcamp-journal/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=slowsteadyman/kb-its-your-life-bootcamp-journal/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>2026 03 04 | kb it&#39;s your life bootcamp journal</title>
+<meta name="keywords" content="">
+<meta name="description" content="
+
+왜 뷰를 쓰는가? kb의 요구사항
+
+
+spring boot 말고 spring legacy를 배움
+
+왜 부트가 아닌가? kb의 요구사항
+
+
+
+스크린샷: window &#43; shift &#43; s
+
+
+vscode에서 자체적으로 markdown preview를 제공함
+
+
+일단 html 배우고 있음
+
+내용 배우는 건 나쁘지 않은데 하지 않아도 되는 부연설명이 좀 많음
+근데 다 아는건 아니라 또 조금씩 도움이 됨
+
+live server extension html 스크립트
+
+
+
+
+
+웹 페이지에서 html 확인하고 싶은 요소 위에 커서를 올리고 검사를 하면 바로 알 수 있음
+
+
+lorem tag 이거 재밌네">
+<meta name="author" content="slowsteadyman">
+<link rel="canonical" href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/journal/0304/">
+<link crossorigin="anonymous" href="/slowsteadyman/kb-its-your-life-bootcamp-journal/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/journal/0304/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/" accesskey="h" title="kb it&#39;s your life bootcamp journal (Alt + H)">kb it&#39;s your life bootcamp journal</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      2026 03 04
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2026-03-04 16:56:58 +0900 KST'>March 4, 2026</span>&nbsp;·&nbsp;<span>slowsteadyman</span>
+
+</div>
+  </header> 
+  <div class="post-content"><ul>
+<li>
+<p>왜 뷰를 쓰는가? kb의 요구사항</p>
+</li>
+<li>
+<p>spring boot 말고 spring legacy를 배움</p>
+<ul>
+<li>왜 부트가 아닌가? kb의 요구사항</li>
+</ul>
+</li>
+<li>
+<p>스크린샷: window + shift + s</p>
+</li>
+<li>
+<p>vscode에서 자체적으로 markdown preview를 제공함</p>
+</li>
+<li>
+<p>일단 html 배우고 있음</p>
+<ul>
+<li>내용 배우는 건 나쁘지 않은데 하지 않아도 되는 부연설명이 좀 많음</li>
+<li>근데 다 아는건 아니라 또 조금씩 도움이 됨
+<ul>
+<li>live server extension html 스크립트</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>웹 페이지에서 html 확인하고 싶은 요소 위에 커서를 올리고 검사를 하면 바로 알 수 있음</p>
+</li>
+<li>
+<p>lorem tag 이거 재밌네</p>
+</li>
+<li>
+<p><strong>본인이 만들고 싶은 돈을 벌 수 있는 초 간단 서비스 아이디어 구상해 오기</strong></p>
+<blockquote>
+<p>관련 분야에 대한 깊이 있는 지식이 있어야만 올바른 질문을 던질 수 있고, AI가 내놓은 여러 답변 중 최적의 것을 가려낼 수 있습니다. 실무에서의 ‘바이브 코딩’이란, AI에게 모든 것을 맡기는 것이 아니라 내가 완전히 컨트롤할 수 있는 범위 내에서, 문제를 잘게 쪼개어 질문하고 답변을 얻으며 영리하게 활용하는 것을 의미합니다. <br><br> 탄탄한 기초 지식 위에 AI와의 협업 능력이 더해질 때에만 비로소 대체 불가능한 ‘AI 네이티브한 개발자’가 탄생하는 것입니다.<br><br>- 카카오테크 CTO 정돈규</p>
+</blockquote>
+</li>
+<li>
+<p><code>내가 컨트롤할 수 있는 범위</code></p>
+<ul>
+<li><code>아무리 클로드라도 내가 모르는 스프링을 맡길 수 있을까?</code></li>
+<li><code>문제가 생겼을 때 내가 이해할 수 있을까?</code></li>
+</ul>
+</li>
+<li>
+<p>a href 속성으로 #id를 주고 클릭하면 그 아이디를 가진 tag 위치로 이동함</p>
+</li>
+</ul>
+<h2 id="주강사님-html-강의">주강사님 html 강의<a hidden class="anchor" aria-hidden="true" href="#주강사님-html-강의">#</a></h2>
+<ul>
+<li>viewport: 디바이스 변동에 관계없이 똑같이 보이게 해주는 메타 태그</li>
+<li>hypertext란?</li>
+<li>uri는 identifier, urn은 name, url은 locator</li>
+</ul>
+<hr>
+<h1 id="markdown-often-syntax">markdown often syntax<a hidden class="anchor" aria-hidden="true" href="#markdown-often-syntax">#</a></h1>
+<h1 id="프로젝트-큰-제목-h1">프로젝트 큰 제목 (H1)<a hidden class="anchor" aria-hidden="true" href="#프로젝트-큰-제목-h1">#</a></h1>
+<h2 id="섹션-제목-h2">섹션 제목 (H2)<a hidden class="anchor" aria-hidden="true" href="#섹션-제목-h2">#</a></h2>
+<h3 id="소제목-h3">소제목 (H3)<a hidden class="anchor" aria-hidden="true" href="#소제목-h3">#</a></h3>
+<h3 align="center">Vscode Live Server++ (BETA) </h3>
+<p align="center">It's Truly Live<p>
+<p><strong>굵은 글씨 (Bold):</strong> 핵심 키워드 강조 <code>**텍스트**</code>
+<em>기울임 (Italic):</em> 부연 설명이나 강조 <code>*텍스트*</code></p>
+<blockquote>
+<p><strong>인용구 (Blockquote):</strong> 프로젝트의 목적이나 특별한 공지사항을 넣을 때 사용합니다. <code>&gt;</code> 기호를 사용합니다.</p>
+</blockquote>
+<ul>
+<li><strong>기능 목록 (Bullet List)</strong>
+<ul>
+<li>멀티 루트 워크스페이스 지원</li>
+<li>실시간 리로드 기능</li>
+</ul>
+</li>
+<li><strong>할 일 목록 (Task List)</strong>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 기본 서버 구현 완료</li>
+<li><input disabled="" type="checkbox"> https 지원 추가 예정</li>
+</ul>
+</li>
+</ul>
+<p><code>code block</code></p>
+<hr>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/slowsteadyman/kb-its-your-life-bootcamp-journal/">kb it&#39;s your life bootcamp journal</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
